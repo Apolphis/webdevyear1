@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+html {
+    background: radial-gradient(circle,#000066,#660066, #ff0066);
+}	
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000099;
+	top: 0;
+	width: 100%;
+	
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: silver;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color:#e60000;
+}
+
+.active {
+	background-color:  #cc0000;
+}	
+
+ol {
+  color: silver;
+ 
+}  
+
+h1 {
+ color: silver;
+ text-align:center;
+}
+
+h2 {
+color: silver;
+}
+
+
+p {
+color: silver;
+}
+</style>
+</head>
+
+<body>
+<h1> Information page</h1>
+<ul>
+  <li><a href="index.html">Home page</a></li>
+  <li><a href="tablepage.html">Table page</a></li>
+  <li><a href="contactform.html">Contact form</a></li>
+  <li><a href="Usain.html">Is it a bird? Is it a plane?</a></li>
+  <li><a href="nafi.html">It's time for Thiam</a></li>
+  <li><a href="mo.html">mo...</a></li>
+  <li><a class="active" href="info.html">info page</a></li>
+  <li><a href="doc.html">documentation page</a></li>
+  
+</ul>
+
+<p>
+<ol>
+  <li>Home page:text, images, Internal CSS layout (multiple containers),linked to external css file.</li>
+  <br>
+  <li>Table page:text,video iframe,table with tabular information, linked to external css file.</li>
+  <br>
+  <li>Contact form:text,text box, radio buttoms, check boxes, submit buttom(with message onclick), reset button, linked to external css file.</li>
+  <br>
+  <li>Is it a bird? Is it a plane? (usain bolts page):Wikipedia iframe, autoplay audio(with controls), linked to external css file.</li>
+  <br>
+  <li>It's time for Thiam(Nafi Thiams page):JavaScripts slide show, wikipedia iframe, autoplay audio(with controls), linked to external css file.</li>
+  <br>
+  <li>mo...(mo farahs pages):Javascript slide show,autoplay audio(with controls), video iframe, linked to external css file.</li>
+  <br>
+  <li>info(information page):List, autoplay audio (enjoy!), internal css style.</li>
+
+
+</ol>
+</br></br>
+<audio id="player" src="audio/bet.mp3" autoplay> </audio>
+<div> 
+  <button onclick="document.getElementById('player').play()">Play</button> 
+  <button onclick="document.getElementById('player').pause()">Pause</button> </body>
+  <button onclick="document.getElementById('player').volume += 0.1">Vol+ </button> </html> 
+  <button onclick="document.getElementById('player').volume -= 0.1">Vol- </button> 
+</div>
+
+</body>
+</html>

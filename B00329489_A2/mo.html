@@ -1,0 +1,160 @@
+<!DOC TYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none;}
+
+
+.slideshow-container {
+  max-height: 25%;
+  max-width: 25%;
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  color: #ed0982;
+  font-size: 15px;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: bottom;
+}
+
+
+.numbertext {
+  color: #ed0982;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10%;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ed0982;
+  border-radius: 30%;
+  display: inline-block;
+  transition: background-color 1.0s ease;
+}
+
+.active {
+  background-color: ;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.0s;
+  animation-name: fade;
+  animation-duration: 3.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 100%) {
+  .text {font-size: 11px}
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<h1> mo, mo , mo , FARAH!</h1>
+<ul>
+  <li><a href="index.html">Home page</a></li>
+  <li><a href="tablepage.html">Table page</a></li>
+  <li><a href="contactform.html">Contact form</a></li>
+  <li><a href="Usain.html">Is it a bird? Is it a plane?</a></li>
+  <li><a href="nafi.html">It's time for Thiam</a></li>
+  <li><a class="active" href="mo.html">mo...</a></li>
+  <li><a href="info.html">info page</a></li>
+  <li><a href="doc.html">documentation page</a></li>
+  
+</ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/mo.jpg" style="width:100%">
+  <div class="text">mo 1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/mo2.jpg" style="width:100%">
+  <div class="text">mo 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/mo3.jpg" style="width:100%">
+  <div class="text">mo 3</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/mo4.jpg" style="width:100%">
+  <div class="text">mo 4</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</div>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(carousel, 4500); 
+}
+</script>
+</br></br>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/8Mib8kIJRy8" frameborder="0" allowfullscreen></iframe></p>
+</br></br>
+<audio id="player" src="audio/2cel.mp3" autoplay> </audio>
+<div> 
+  <button onclick="document.getElementById('player').play()">Play</button> 
+  <button onclick="document.getElementById('player').pause()">Pause</button> </body>
+  <button onclick="document.getElementById('player').volume += 0.1">Vol+ </button> </html> 
+  <button onclick="document.getElementById('player').volume -= 0.1">Vol- </button> 
+</div>
+ </body>
+</html>   

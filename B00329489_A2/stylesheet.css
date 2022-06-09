@@ -1,0 +1,53 @@
+html {
+    background: radial-gradient(#a442f4,#e80935,#0923e8);
+}	
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ed0982;
+	top: 0;
+	width: 100%;
+	
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: silver;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color:#e028b8;
+}
+
+.active {
+	background-color: #ed0942;
+}	
+
+
+h1 {
+ color:silver;
+ text-align:center;
+}
+
+h2 {
+color:silver;
+}
+
+
+p {
+color:silver;
+}
+
+table,th,tr,td {
+	color:silver;
+}

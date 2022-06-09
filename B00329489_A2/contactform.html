@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>contact form</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+</head>
+
+<body>
+<h1><ul>
+  <li><a href="index.html">Home page</a></li>
+  <li><a href="tablepage.html">Table page</a></li>
+  <li><a class="active"  href="contactform.html">Contact form</a></li>
+  <li><a href="Usain.html">Is it a bird? Is it a plane?</a></li>
+  <li><a href="nafi.html">It's time for Thiam</a></li>
+  <li><a href="mo.html">mo...</a></li>
+  <li><a href="info.html">info page</a></li>
+  <li><a href="doc.html">documentation page</a></li>
+</ul>
+</h1>
+<h2 style="font-family:courier;">By completing this contact form, you have agreed to partake in research for the events you have attended.</h2>
+<form>
+<p style="font-family:courier;">
+Fullname:<br>
+<input type="text" name="name" id="name"/>
+<br>
+Address:<br>
+<textarea name="message" id="address" rows="4"
+cols="20"></textarea>
+<br>
+Email:<br>
+<input type"email" name="email" id="email"/>
+<br>
+</p>
+
+<p style="font-family:courier;">
+<input type="radio" name="gender" value="male" checked> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other<br>
+</p>
+
+<p style="font-family:courier;">
+<input type="checkbox" name="vehicle1" value="Motor Bike">Arrived via motor bike
+<br>
+<input type="checkbox" name="vehicle2" value="Car"> Arrived via car
+<br>
+<input type="checkbox" name="vehicle3" value="other"> Arrived via other form of transport
+<br>
+<input type="button" onclick="alert('you have submitted your contact form, please return to the home page')" value="Submit">
+</br></br>
+<input type="reset">
+</p>
+
+</form>
+</body>

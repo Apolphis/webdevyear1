@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none;}
+
+
+.slideshow-container {
+  max-height: 30%;
+  max-width: 30%;
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  color: #FFFF00;
+  font-size: 15px;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #FFFF00;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10%;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 30%;
+  display: inline-block;
+  transition: background-color 1.0s ease;
+}
+
+.active {
+  background-color: ;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.0s;
+  animation-name: fade;
+  animation-duration: 2.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 75%) {
+  .text {font-size: 11px}
+}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+</head>
+<body>
+
+<h1>Nafi Thiam</h1>
+<ul>
+  <li><a href="index.html">Home page</a></li>
+  <li><a href="tablepage.html">Table page</a></li>
+  <li><a href="contactform.html">Contact form</a></li>
+  <li><a href="Usain.html">Is it a bird? Is it a plane?</a></li>
+  <li><a class="active" href="nafi.html">It's time for Thiam</a></li>
+  <li><a href="mo.html">mo...</a></li>
+  <li><a href="info.html">info page</a></li>
+  <li><a href="doc.html">documentation page</a></li>
+  
+</ul>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/naf1.jpg" style="width:80%">
+  <div class="text">nafi 1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/naf2.jpg" style="width:60%">
+  <div class="text">nafi 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/naf3.jpg" style="width:80%">
+  <div class="text">nafi 3</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/naf4.jpg" style="width:80%">
+  <div class="text">nafi 4</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</div>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+<p>
+</br></br></br>
+<iframe src="https://en.wikipedia.org/wiki/Nafissatou_Thiam" height="350" width="850"></iframe>
+</br></br>
+</p>
+
+<audio id="player" src="audio/chris.mp3" autoplay> </audio>
+<div> 
+  <button onclick="document.getElementById('player').play()">Play</button> 
+  <button onclick="document.getElementById('player').pause()">Pause</button> </body>
+  <button onclick="document.getElementById('player').volume += 0.1">Vol+ </button> </html> 
+  <button onclick="document.getElementById('player').volume -= 0.1">Vol- </button> 
+</div>
